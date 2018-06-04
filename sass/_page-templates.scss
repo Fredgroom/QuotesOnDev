@@ -1,0 +1,181 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+
+button, input {
+    background-color: #222;
+    border-color: #0c0;
+    color: #0c0;
+    background: linear-gradient(none);
+    padding: 5px 25px;
+}
+
+h1 {
+    margin: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+    input {
+        margin-bottom: 15px;
+        width: 60%;
+    }
+    textarea {
+        margin-bottom: 15px;
+    }
+}
+
+/* All Archives Page */
+.archive-template{  
+        h2 {
+            padding-left: 20px;
+        }
+        li {
+            list-style: none;
+            padding: 5px;
+        }
+        a{
+            text-decoration: none;
+            font-size: 1.25rem;
+        }
+        ul li {
+            float: left;
+        }
+        .tag-archives {
+            padding-bottom: 100px;
+        }
+}
+
+
+/* Submit a Quote Page */
+
+.logo{
+    width: 800px;
+    svg {
+    
+    display: grid;
+    margin: 0 auto;
+    }
+}
+
+@media (min-width: 620px) {
+    .entry-content {
+        margin: auto 25px;
+    }
+}
+
+@media (min-width: 1080px) {
+    h1 {
+        text-align: center;
+    }
+    img{
+        display: block;
+        margin: 70px auto;
+    }
+    .content-area {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .content-area::before {
+        font-family: 'fontawesome';
+        content: "\f10d";
+        color: #0c0;
+        font-size: 8em;
+        padding: 50px;
+        padding-top: 0;
+    }
+    .content-area::after { 
+        font-family: 'fontawesome';
+        content: "\f10e";
+        color: #0c0;
+        font-size: 8em;
+        padding: 50px;
+        padding-top: 0;
+    }
+    .archive-article::before {
+        font-family: 'fontawesome';
+        content: "\f10d";
+        color: #0c0;
+        font-size: 8em;
+        padding: 50px;
+        padding-top: 0;
+    }
+    .archive-article::after { 
+        font-family: 'fontawesome';
+        content: "\f10e";
+        color: #0c0;
+        font-size: 8em;
+        padding: 50px;
+        padding-top: 0;
+    }
+    .archive-template {
+        display: inline-flex;
+        flex-direction: column;
+        margin: 0;
+        width: 50%;
+        p {
+            width: 50%;
+            min-width: 100%;
+        }
+    }
+    .archive-article{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .site-main {
+        width: 50%;
+        p {
+            font-size: 2.5rem;
+            min-width: 100%;
+        }
+        #new-quote-button {
+            display: block;
+            margin: 40px auto;
+            font-size: 1.25em;
+            padding: 8px 35px;
+        }
+    }
+    .entry-meta {
+        display: flex;
+        h2 {
+            font-size: 20px;
+            font-weight: normal;
+           padding: 0;
+           margin: 0; 
+        }
+      
+        font-size: 20px;
+        font-weight: normal;
+        font-style: italic;
+    }
+    // .main-navigation {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: flex-end;
+    //     padding: 0 50px;
+    //     .menu {
+    //         display: grid;
+    //         grid-template-columns: 25% 25% 25% 25%;
+    //     }
+    // }
+    .about-content-area {
+        p{
+        font-size: 1em;
+        }
+    }
+}
